@@ -1,0 +1,28 @@
+# Core Web Framework
+Django==5.1.4
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.5.1
+django-cors-headers==4.0.0
+gunicorn==23.0.0
+
+# Database (Supabase / Postgres)
+psycopg2-binary==2.9.10
+sqlparse==0.5.3
+
+# Data & Analysis
+pandas==3.0.0
+numpy==2.1.0
+
+# Networking & API Requests
+requests==2.32.3
+httpx==0.28.1
+
+# Environment & Compatibility
+python-dotenv==1.1.1
+setuptools==80.9.0
+asgiref==3.8.1
+
+django_ratelimit==4.1.0
+
+upstash-redis
+whitenoise
