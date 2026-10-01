@@ -39,12 +39,14 @@ import os
 from dotenv import load_dotenv
 from upstash_redis import Redis
 import json
-cache = Redis.from_env()
+
 
 load_dotenv()
-HOST = os.getenv("HOST") 
 
+redis_url = os.getenv("UPSTASH_REDIS_REST_URL")
+redis_token = os.getenv("UPSTASH_REDIS_REST_TOKEN")
 
+cache = Redis(url=redis_url, token=redis_token)
 
 # User.objects.all().delete()
 # UserRole.objects.all().delete()

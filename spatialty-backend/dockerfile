@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y \
 # Set work directory
 WORKDIR /app
 
+# Set Python path so backend and myapp packages are discoverable
+ENV PYTHONPATH="/app/src/spatialty_backend"
+
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip setuptools wheel
